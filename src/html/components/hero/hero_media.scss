@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+	.hero {
+		&__content {
+			display: block;
+		}
+
+		&__title--right {
+			margin-left: 0;
+		}
+
+		&__descr {
+			margin-bottom: #{$offset-extra-small}px;
+		}
+	}
+}
+
+@media (max-width: 475px) {
+	.hero {
+		&__social {
+			display: none;
+		}
+
+		&__social-wrap {
+			justify-content: flex-start;
+		}
+	}
+}

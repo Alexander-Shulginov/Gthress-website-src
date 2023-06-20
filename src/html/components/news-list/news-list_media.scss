@@ -1,0 +1,25 @@
+@media (max-width: 843px) {
+	.news-list {
+		&__item {
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+
+        &__icon {
+            bottom: -25px;
+        }
+	}
+}
+
+@media (max-width: 511px) {
+	.news-list {
+		&__photo {
+			flex-shrink: 1;
+		}
+
+		&__date--accent {
+			color: inherit;
+			display: inline;
+		}
+	}
+}

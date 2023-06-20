@@ -1,0 +1,42 @@
+form.form(action="#" )
+
+	input.form__input(
+		type="text"
+		name="name-input"
+		id="user-name" 
+		placeholder="ФИО", 
+		required)
+
+	input.form__input(
+		type="tel"
+		name="phone-input" 
+		id="phone-number" 
+		placeholder="Телефон", 
+		required)
+
+	input.form__input(
+		type="email" 
+		name="mail-input" 
+		id="user-email" 
+		placeholder="E-mail", 
+		required)
+
+	div.form__select-wrap
+		label(for="services")
+			span.form__text Услуга
+		select.form__input.form__select(name="select" id="services")
+			option.form__option(value="Auto") Автоперевозки
+			option.form__option(value="Avia") Авиаперевозки
+			option.form__option(value="Train") Железнодорожные перевозки
+			option.form__option(value="Danger") Перевозки опасных грузов
+			option.form__option(value="Weight") Перевозки тяжеловесных
+			option.form__option(value="Modal") Мультимодальные перевозки
+
+	textarea.form__input.form__textarea(
+		name="textarea"
+		rows="1" 
+		id="user-msg" 
+		placeholder="Сообщение")
+
+	button.form__btn(type="submit") Отправить заявку
+

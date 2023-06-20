@@ -1,0 +1,20 @@
+-
+	var names = [
+		"Как застрахован груз на международных грузоперевозках",
+		"Как обезопасить грузоперевозки: основы страхования груза",
+		"Страхование груза на международных перевозках: что нужно знать?",
+		"Грузоперевозки: какие виды страхования груза существуют?",
+	]
+
+
+section.news#news 	
+	.container 
+		h2.news__title Новости
+		.news__content 
+			ul.news__list
+				each name in names 
+					li.news__item 
+						a.news__link(href="#")= name
+			.news__wrap
+				+img-simple("news/photo", "news__img", 738, 575, "News photo", "lazy")
+		a.news__go-to-link(href="news.html") Смотреть все

@@ -1,0 +1,6 @@
+aside.social
+	ul.social__list 
+		each app in ["whatsapp", "viber", "skype", "telegram"]
+			li.social__item
+				a.social__link(href="#" aria-label=`Link to ${app}`)
+					+svg(`social--${app}`, "social__icon", 36, 36)

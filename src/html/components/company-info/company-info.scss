@@ -1,0 +1,35 @@
+.info {
+	@extend %section-padding;
+
+	&__title {
+		margin-bottom: offset($offset-large);
+		@extend %title-style;
+	}
+
+	&__content {
+		max-width: 960px;
+		margin-left: auto;
+	}
+
+	&__subtitle {
+		@extend %base-text-style;
+		font-weight: 500;
+		margin-bottom: offset($offset-base);
+	}
+
+	&__text {
+		color: $base-color;
+		font-size: 16px;
+		line-height: 1.2;
+		display: block;
+	}
+
+	&__columns {
+		columns: 2 auto;
+		margin-bottom: clamp-px(60, 140);
+	}
+
+	&__img {
+		margin: clamp-px(20, 40) 0;
+	}
+}

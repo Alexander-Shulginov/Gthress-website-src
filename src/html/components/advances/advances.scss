@@ -1,0 +1,37 @@
+.advances {
+	@extend %section-padding;
+
+	&__title {
+		@extend %title-style;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: #{$offset-base}px;
+	}
+
+	&__key {
+		margin-bottom: offset($offset-base);
+		padding-bottom: offset($offset-extra-small);
+		border-bottom: 2px solid $bg-decor-color;
+		font-size: clamp-px(18, 22);
+		color: $base-color;
+		font-weight: 500;
+	}
+
+	&__value {
+		font-size: clamp-px(50, 80);
+		color: $decor-color;
+		font-weight: 500;
+	}
+
+	&__value-text {
+		display: inline-block;
+		margin-left: 10px;
+		font-size: clamp-px(25, 50);
+		color: inherit;
+	}
+}

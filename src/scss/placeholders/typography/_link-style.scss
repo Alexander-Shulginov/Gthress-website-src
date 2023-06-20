@@ -1,0 +1,20 @@
+%link-style {
+	$icon-size: 14px;
+	@extend %hero-text-style;
+	text-transform: uppercase;
+	text-decoration: underline;
+
+	position: relative;
+
+	&::after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: $icon-size;
+		width: $icon-size;
+		height: $icon-size;
+		background: url(../icons/sprite/sprite.svg#go-to-arrow);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}

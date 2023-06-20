@@ -1,0 +1,21 @@
+header.header
+	.container
+		.header__content
+			a.header__logo-link(href="index.html" aria-label="Company logo")
+				+svg("logo", "header__logo", 213, 33)
+			nav.header__menu
+				ul.header__list
+					li.header__item
+						a.header__link(href="about-company.html") 
+							| О компании
+					li.header__item
+						a.header__link(href="news.html") 
+							| Новости
+					li.header__item
+						a.header__link(href="#footer") 
+							| Контакты
+			a.header__calc(href="services.html") Все услуги
+			button.header__burger(type="button" aria-label="Burger button")
+				span.header__line
+				span.header__line
+				span.header__line

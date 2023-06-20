@@ -1,0 +1,28 @@
+.hero-jobs {
+	@extend %section-padding;
+	@include bg-img("hero/news");
+	background-position-x: right;
+
+	&__content {
+		position: relative;
+	}
+
+	&__title {
+		margin-bottom: $offset-large;
+		// @include h1-style;
+	}
+
+	&__text {
+		margin-bottom: clamp-px(90, 180);
+		@extend %hero-text-width;
+		// @include text-style;
+	}
+
+	&__social {
+		@extend %icons-position;
+	}
+
+	&__link {
+		@extend %links-position;
+	}
+}

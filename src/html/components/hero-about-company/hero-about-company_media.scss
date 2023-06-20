@@ -1,0 +1,13 @@
+@media (max-width: 525px) {
+	.hero-about {
+		background-position-x: 55%;
+
+		&__social-icons {
+			display: none;
+		}
+
+		&__social-links {
+			justify-content: flex-start;
+		}
+	}
+}

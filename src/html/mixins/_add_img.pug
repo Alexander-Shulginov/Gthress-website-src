@@ -1,0 +1,18 @@
+mixin img(name, class_name, widht, height, format="webp", alt, basePath="./img/")
+    picture 
+        source(type=`image/${format}`
+        srcset=`${basePath}${name}@1x.${format}, ${basePath}${name}@2x.${format}, ${basePath}${name}@3x.${format}`) 
+        img(class=`${class_name}`
+        src=`${basePath}${name}.${format}` 
+        width=`${width}`
+        height=`${height}`
+        alt=`This is beautiful image`)
+
+mixin img-simple(name, class_name, width, height, alt="This is beautiful image`", loading="eager", format="webp", basePath="./img/")
+    img(class=`${class_name}` 
+    src=`${basePath}${name}.${format}` 
+    width=`${width}`
+    height=`${height}`
+    alt=`${alt}`
+    loading=`${loading}`)
+    

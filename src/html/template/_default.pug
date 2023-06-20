@@ -1,0 +1,13 @@
+include ../mixins/_add_img
+include ../mixins/_add_svg
+
+include ./_head.pug  
+body
+    include ../components/header/_header
+    include ../components/menu/_menu
+    block hero-content
+    main.main
+        block main-content 
+    include ../components/footer/_footer
+
+    include ./_scripts

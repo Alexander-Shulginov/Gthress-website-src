@@ -1,0 +1,67 @@
+.footer {
+	@extend %section-padding;
+	@extend %container-outer;
+	background: url(../img/footer/bg.webp);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&__title {
+		@extend %title-light-style;
+		margin-bottom: offset($offset-large);
+	}
+
+	&__descr {
+		max-width: 425px;
+
+		font-family: $main-font;
+		color: $base-light-color;
+		font-size: clamp-px(20, 36);
+		line-height: 1.4;
+	}
+
+	&__descr--accent {
+		color: $accent-color;
+	}
+
+	&__inner {
+		margin-bottom: clamp-px(100, 140);
+		display: flex;
+		justify-content: space-between;
+		gap: $gap-large;
+	}
+
+	&__form {
+		max-width: 690px;
+	}
+
+	&__info {
+		padding-bottom: 25px;
+		border-bottom: 2px solid $bg-decor-color;
+		display: flex;
+		justify-content: space-between;
+		@extend %hero-text-style;
+	}
+
+	&__item {
+		&:nth-child(2) {
+			text-align: center;
+		}
+
+		&:nth-child(3) {
+			text-align: right;
+		}
+	}
+
+	&__text {
+		display: block;
+		margin-bottom: #{$offset-extra-small}px;
+		color: $accent-color;
+	}
+
+	&__link {
+		display: block;
+		color: $bg-decor-color;
+		font-size: clamp-px(18, 24);
+	}
+}

@@ -1,0 +1,6 @@
+@mixin bg-img($name) {
+	background-image: url("../img/#{$name}.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

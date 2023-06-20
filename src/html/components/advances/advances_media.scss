@@ -1,0 +1,29 @@
+@media (max-width: 1290px) {
+	.advances {
+		&__list {
+			justify-content: center;
+		}
+		&__item {
+			flex-basis: 45%;
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.advances {
+		&__title {
+			text-align: center;
+		}
+
+		&__list {
+			justify-content: center;
+		}
+
+		&__item {
+			flex-basis: unset;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}

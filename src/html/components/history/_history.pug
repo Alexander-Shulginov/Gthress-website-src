@@ -1,0 +1,80 @@
+section.history
+	.container
+		h2.history__title История развития компании
+		.history__inner
+			.history__box
+				picture
+					source(srcset="./icons/history/time-line-mobile.svg" media="(max-width: 927px)")
+					img.history__icon(src="./icons/history/time-line.svg" loading="lazy" alt="Time line" width="550" height="690")
+			.history__content
+				article.history__item(aria-label="Description of history this company")
+					time.history__date(datetime="2020-12-01") Декабрь, 2020
+					p.history__text
+					| Обзор железнодорожного, автомобильного рынка в России, тенденции изменений рынка на будущий год, активная динамика. Обзор железнодорожного, автомобильного рынка в России, тенденции изменений рынка на будущий год, активная динамика.
+				article.history__item(aria-label="Description of history this company")
+					time.history__date(datetime="2021-06-02") Июнь, 2021
+					p.history__text 
+					| На сегодняшний день российский железнодорожный и автомобильный рынки являются активно развивающимися отраслями, которые постоянно меняют свои тенденции и динамику. Спустя год, в будущем, можно ожидать продолжения этой эволюции.
+				article.history__item(aria-label="Description of history this company")
+					time.history__date(datetime="2022-09-09") Сентябрь, 2022
+					p.history__text 
+					| Рынки железнодорожного и автомобильного транспорта в России находятся в состоянии постоянного изменения. Тенденции будущего года могут быть непредсказуемыми, но можно предположить, что активная динамика будет сохраняться и направлена на улучшение качества и эффективности этих отраслей.
+
+
+
+
+//- <section class="history">
+	<div class="container">
+		<h2 class="history__title title-style">История развития компании</h2>
+		<div class="history__inner">
+			<div class="history__box">
+				<picture>
+					<source
+						srcset="./icons/history/time-line-mobile.svg"
+						media="(max-width: 927px)"
+					/>
+					<img
+						src="./icons/history/time-line.svg"
+						class="history__icon"
+						loading="lazy"
+						alt="Time line"
+						width="550"
+						height="690"
+					/>
+				</picture>
+			</div>
+			<div class="history__content">
+				<article class="history__item">
+					<time class="history__date" datetime="2020-12-01">Декабрь, 2020</time>
+					<p class="history__text">
+						Обзор железнодорожного, автомобильного рынка в России, тенденции
+						изменений рынка на будущий год, активная динамика. Обзор
+						железнодорожного, автомобильного рынка в России, тенденции
+						изменений рынка на будущий год, активная динамика.
+					</p>
+				</article>
+				<article class="history__item">
+					<time class="history__date" datetime="2021-06-02">Июнь, 2021</time>
+					<p class="history__text">
+						На сегодняшний день российский железнодорожный и автомобильный
+						рынки являются активно развивающимися отраслями, которые постоянно
+						меняют свои тенденции и динамику. Спустя год, в будущем, можно
+						ожидать продолжения этой эволюции.
+					</p>
+				</article>
+				<article class="history__item">
+					<time class="history__date" datetime="2022-09-09">
+						Сентябрь, 2022
+					</time>
+					<p class="history__text">
+						Рынки железнодорожного и автомобильного транспорта в России
+						находятся в состоянии постоянного изменения. Тенденции будущего
+						года могут быть непредсказуемыми, но можно предположить, что
+						активная динамика будет сохраняться и направлена на улучшение
+						качества и эффективности этих отраслей.
+					</p>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>

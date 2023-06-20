@@ -1,0 +1,51 @@
+@media (max-width: 900px) {
+	.header {
+		&__menu {
+			display: none;
+		}
+
+		&__contacts {
+			display: none;
+		}
+
+		&__burger {
+			display: flex;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		&__tel {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 630px) {
+	.header {
+		&__content {
+			gap: #{$gap-base}px;
+		}
+
+		&__logo-link {
+			display: inline-block;
+			width: 44px;
+			overflow: hidden;
+		}
+	}
+}
+
+@media (max-width: 370px) {
+	.header {
+		padding-top: 9px;
+
+		&__calc {
+			display: none;
+		}
+
+		&__burger {
+			margin-bottom: 9px;
+		}
+	}
+}

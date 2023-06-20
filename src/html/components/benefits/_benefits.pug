@@ -1,0 +1,17 @@
+-
+	var items = {
+		"Гарантии сохранности": "benefits/benefits-item-1",
+		"Экологические стандарты": "benefits/benefits-item-2",
+		"Индивидуальный подход": "benefits/benefits-item-3",
+		"Высокое качество услуг": "benefits/benefits-item-4",
+	}
+
+
+section.benefits
+	.container 
+		h2.benefits__title Почему мы
+		.benefits__wrapper
+			each path, name in items
+				article.benefits__item 
+					h3.benefits__name= name
+					+img-simple(path, "benefits__img", 200, 200, name, "lazy")

@@ -1,0 +1,9 @@
+@media (max-width: 645px) {
+	.menu {
+		&__content {
+			&--services {
+				display: none;
+			}
+		}
+	}
+}

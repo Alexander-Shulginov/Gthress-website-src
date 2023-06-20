@@ -1,0 +1,46 @@
+.hero-services {
+	@extend %hero-section-padding;
+	@extend %container-outer;
+	@include bg-img("hero/hero-services");
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $bg-hero;
+		z-index: 1;
+	}
+
+	&__content {
+		position: relative;
+		z-index: 11;
+	}
+
+	&__title {
+		@extend %hero-title-style;
+		margin-bottom: offset($offset-base);
+	}
+
+	&__descr {
+		margin-bottom: #{$offset-base}px;
+		@extend %hero-text-width;
+		@extend %hero-text-style;
+	}
+
+	&__link {
+		@extend %link-style;
+		display: block;
+		margin-bottom: 100px;
+	}
+
+	&__social-icons {
+		@extend %icons-position;
+	}
+
+	&__social-links {
+		@extend %links-position;
+	}
+}

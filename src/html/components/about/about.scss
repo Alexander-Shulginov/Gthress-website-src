@@ -1,0 +1,25 @@
+.about {
+	@extend %section-padding;
+
+	&__title {
+		@extend %title-style;
+	}
+
+	&__descr {
+		max-width: 1087px;
+		margin-left: auto;
+		margin-bottom: offset($offset-large);
+		@extend %base-text-style;
+	}
+
+	&__img {
+		max-width: 100%;
+		height: auto;
+		margin-bottom: offset($offset-base);
+	}
+
+	&__link {
+		@extend %link-style;
+		color: $decor-color;
+	}
+}

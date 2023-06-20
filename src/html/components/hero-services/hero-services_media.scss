@@ -1,0 +1,11 @@
+@media (max-width: 525px) {
+	.hero-services {
+		&__social-icons {
+			display: none;
+		}
+
+		&__social-links {
+			justify-content: center;
+		}
+	}
+}

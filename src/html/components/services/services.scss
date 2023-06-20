@@ -1,0 +1,28 @@
+.services {
+	@extend %container-outer;
+	@extend %section-padding;
+	@include bg-img("news/BG");
+	overflow: hidden;
+	position: relative;
+
+	&__title {
+		@extend %title-light-style;
+		margin-bottom: offset($offset-base);
+	}
+
+	&__descr {
+		max-width: 1000px;
+		margin-left: auto;
+		margin-bottom: offset($offset-base);
+		@extend %base-light-text-style;
+	}
+
+	&-wrap {
+		text-align: right;
+		margin-bottom: offset($offset-large);
+	}
+
+	&__link {
+		@extend %link-style;
+	}
+}

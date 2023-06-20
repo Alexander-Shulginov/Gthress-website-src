@@ -1,0 +1,30 @@
+%section-padding {
+	padding-top: clamp-px(60, 120);
+	padding-bottom: clamp-px(20, 65);
+}
+
+%hero-section-padding {
+	padding-top: clamp-px(100, 170);
+	padding-bottom: clamp-px(20, 35);
+}
+
+%container-outer {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+%hero-text-width {
+	max-width: clamp-px(400, 720);
+}
+
+%icons-position {
+	position: absolute;
+	right: 0;
+	bottom: 12%;
+}
+
+%links-position {
+	display: flex;
+	justify-content: flex-end;
+}
+

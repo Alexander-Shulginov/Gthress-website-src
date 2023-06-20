@@ -1,0 +1,78 @@
+.lead {
+	@extend %section-padding;
+	background-color: $bg-decor-color;
+
+	&__title {
+		@extend %title-style;
+	}
+
+	&__content {
+		display: flex;
+		color: $base-light-color;
+	}
+
+	&__info {
+		position: relative;
+		flex-grow: 1;
+	}
+
+	&__position {
+		position: absolute;
+		left: 40px;
+		bottom: 40px;
+
+		max-width: 190px;
+
+		font-size: 24px;
+		font-size: clamp-px(18, 24);
+		font-weight: 500;
+	}
+
+	&__person-info {
+		flex-grow: 2;
+		padding-top: clamp-px(30, 100);
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: clamp-px(20, 40);
+		background: linear-gradient(135deg, #09325b 0%, rgba(69, 99, 233, 0.3) 100%),
+			#09325b;
+	}
+
+	&__photo {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__name {
+		display: block;
+		max-width: 150px;
+
+		font-size: 48px;
+		font-size: clamp-px(30, 48);
+		font-weight: 600;
+		line-height: 1.4;
+	}
+
+	&__descr {
+		margin-bottom: clamp-px(20, 122);
+		max-width: 768px;
+		position: relative;
+		&::before {
+			content: close-quote;
+			transform: rotate(180deg);
+			font-size: 80px;
+			font-size: clamp-px(50, 80);
+			display: inline-block;
+		}
+	}
+
+	&__text {
+		line-height: 1.3;
+	}
+
+	&__icon {
+		display: block;
+		margin-left: auto;
+	}
+}

@@ -1,0 +1,36 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: $main-font;
+	background-color: $bg-color;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+	&:focus-within {
+		outline-width: 2px;
+		outline-offset: 4px;
+		outline-color: lighten($decor-color, 10%);
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.outer-container {
+	max-width: $outer-container-width;
+	margin: 0 auto;
+}

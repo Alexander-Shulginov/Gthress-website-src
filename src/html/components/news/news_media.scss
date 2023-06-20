@@ -1,0 +1,15 @@
+@media (max-width: 968px) {
+	.news {
+		&__img {
+			display: none;
+		}
+
+		&__list {
+			flex-basis: 100%;
+		}
+
+		&__link {
+			max-width: 100%;
+		}
+	}
+}

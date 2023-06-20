@@ -1,0 +1,30 @@
+@media (max-width: 1157px) {
+	.our-services {
+		&__content {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+@media (max-width: 769px) {
+	.our-services {
+		&__content {
+			grid-template-columns: 1fr;
+		}
+		&__subtitle {
+			margin-bottom: 20px;
+		}
+
+		&__img {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media (max-width: 535px) {
+	.our-services {
+		&__link {
+			height: auto;
+		}
+	}
+}

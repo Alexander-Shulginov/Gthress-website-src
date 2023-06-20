@@ -1,0 +1,61 @@
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: #{$gap-base}px;
+	row-gap: #{$gap-large}px;
+
+	&__input {
+		flex-basis: 48%;
+		padding: 7px;
+		border-bottom: 1px solid $base-light-color;
+		font-family: $main-font;
+		color: $base-light-color;
+		font-size: clamp-px(14, 16);
+		background-color: transparent;
+		&::placeholder {
+			color: darken($base-light-color, 25%);
+		}
+
+		&:focus-within {
+			outline-offset: 0px;
+		}
+	}
+
+	&__select-wrap {
+		flex-basis: 48%;
+		position: relative;
+	}
+
+	&__text {
+		position: absolute;
+		top: -14px;
+		left: -9px;
+		display: block;
+		margin-left: 9px;
+		font-family: $main-font;
+		color: $base-light-color;
+		font-size: 12px;
+	}
+
+	&__select {
+		width: 100%;
+	}
+
+	&__option {
+		color: $base-color;
+		background-color: $base-light-color;
+	}
+
+	&__textarea {
+		flex-basis: 100%;
+		overflow: hidden;
+		resize: none;
+	}
+
+	&__btn {
+		margin-left: auto;
+		@extend %link-style;
+		background-color: transparent;
+		cursor: pointer;
+	}
+}

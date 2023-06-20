@@ -1,0 +1,75 @@
+.hero {
+	@extend %container-outer;
+	@extend %section-padding;
+	@include bg-img("hero/hero-img");
+
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $bg-hero;
+		z-index: 1;
+	}
+
+	&__label {
+		@extend %slogan-style;
+		display: block;
+		text-align: center;
+	}
+
+	&__inner {
+		position: relative;
+	}
+
+	&__content {
+		max-width: 780px;
+		margin-bottom: clamp-px(50, 110); //!
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: 1fr 1fr;
+		z-index: 10;
+		position: relative;
+	}
+
+	&__title {
+		grid-column: span 2;
+		@extend %hero-title-style;
+		color: $accent-color;
+	}
+
+	&__title--right {
+		display: block;
+		margin-left: clamp-px(1, 100);
+	}
+
+	&__title--not-accent {
+		grid-column: 1 / 2;
+		color: $base-light-color;
+	}
+
+	&__descr {
+		max-width: 360px;
+		margin-top: 10px;
+		@extend %hero-text-style;
+	}
+
+	&__link {
+		grid-column-start: 2;
+		@extend %link-style;
+	}
+
+	&__social {
+		@extend %icons-position;
+		z-index: 12;
+	}
+
+	&__social-wrap {
+		position: relative;
+		z-index: 10;
+		@extend %links-position;
+	}
+}

@@ -1,0 +1,97 @@
+.header {
+	border-bottom: 2px solid $bg-decor-color;
+
+	&__logo-link {
+		margin-right: auto;
+	}
+
+	&__content {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: #{$gap-large}px;
+	}
+
+	&__link {
+		@extend %hero-text-style;
+		color: $base-color;
+		font-weight: 600;
+		background-color: transparent;
+		transition: color 0.3s ease-in-out;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $decor-color;
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		gap: 18px;
+	}
+
+	&__calc {
+		padding-top: clamp-px(16, 26, 630);
+		padding-right: clamp-px(25, 57, 630);
+		padding-bottom: clamp-px(16, 26, 630);
+		padding-left: clamp-px(21, 51, 630);
+
+		@extend %link-style;
+		background-color: $decor-color;
+		font-size: clamp-px(14, 16);
+		font-weight: 700;
+		text-decoration: none;
+		transition: background-color 0.3s ease-in-out;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: lighten($decor-color, 10%);
+			}
+		}
+
+		&:focus {
+			outline-offset: 0;
+			outline-color: $accent-color;
+		}
+	}
+
+	&__burger {
+		cursor: pointer;
+		background-color: transparent;
+		border: 0;
+		display: none;
+		flex-direction: column;
+		gap: 13px;
+		transform: rotate(-180deg);
+		z-index: 25;
+	}
+
+	&__line {
+		display: block;
+		background-color: $decor-color;
+		width: 48px;
+		height: 4px;
+		transition: all 0.3s ease-in-out;
+
+		&:nth-child(3) {
+			width: 33px;
+		}
+	}
+
+	&__close &__line {
+		&:nth-child(1) {
+			transform-origin: top left;
+			transform: rotate(45deg);
+		}
+		&:nth-child(2) {
+			opacity: 0;
+		}
+		&:nth-child(3) {
+			transform-origin: bottom left;
+			transform: rotate(-45deg);
+			width: 48px;
+		}
+	}
+}

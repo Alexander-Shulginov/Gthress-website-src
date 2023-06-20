@@ -1,0 +1,21 @@
+- 
+	var slides = 
+	{
+		"Авиаперевозки": "slider/avia",
+		"Автомобильные перевозки": "slider/auto",
+		"Железнодорожные перевозки": "slider/train",
+		"Перевозки опасных грузов": "slider/weight",
+		"Мультимодальные перевозки": "slider/modal",
+		"Перевозки габаритных грузов": "slider/sea"
+	}
+
+section.swiper.slider
+	.swiper-wrapper.slider__inner
+		each path, name in slides 
+			article.swiper-slide.slider__item 
+				+img-simple(path, "slider__img", 470, 350, name, "lazy")
+				h3.slider__title= name
+	.swiper-pagination
+
+
+

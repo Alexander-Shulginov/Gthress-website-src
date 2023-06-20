@@ -1,0 +1,44 @@
+.history {
+	@extend %section-padding;
+
+	&__title {
+		@extend %title-style;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: #{$gap-large}px;
+	}
+
+	&__box {
+		flex-shrink: 0.5;
+	}
+
+	&__content {
+		max-width: 718px;
+		display: flex;
+		flex-direction: column;
+		gap: #{$gap-large}px;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			padding-bottom: clamp-px(20, 40);
+			border-bottom: 1px solid #6b7280;
+		}
+	}
+
+	&__date {
+		display: block;
+		margin-bottom: clamp-px(20, 40);
+		color: #6b7280;
+	}
+
+	&__text {
+		font-size: 18px;
+		font-size: clamp-px(16, 18);
+		line-height: 1.4;
+	}
+}

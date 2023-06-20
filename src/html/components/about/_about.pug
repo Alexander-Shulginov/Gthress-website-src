@@ -1,0 +1,21 @@
+section.about#about
+	.container 
+		h2.about__title О компании
+		p.about__descr 
+			| Наша компания предоставляет широкий спектр услуг по доставке грузов наземным, морским, воздушным транспортом, складской обработке и страхованию грузов.
+		p.about__descr 
+			| Основываясь на глубоком понимании специфики различных отраслей, мы применяем индивидуальный подход к потребностям наших клиентов в области логистики.
+		picture 
+			source(type="image/webp"
+			srcset=" ./img/about/map-mobile.webp"
+			media="(max-width: 550px)")
+			source(type="image/webp" 
+			srcset="./img/about/map.webp")
+
+			img.about__img(src="./img/about/map.webp"
+			loading="lazy"
+			width="1456" 
+			height="693" 
+			alt="Map delivery")
+		a.about__link(href="about-company.html") Узнать больше
+

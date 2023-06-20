@@ -1,0 +1,20 @@
+.social-link {
+	display: flex;
+	gap: clamp-px(18, 60);
+
+	font-family: $main-font;
+	color: $base-light-color;
+	font-size: 16px;
+	font-size: clamp-px(14, 16);
+	font-weight: 600;
+	text-transform: uppercase;
+
+	&__site {
+		transition: color 0.3s linear;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $accent-color;
+			}
+		}
+	}
+}

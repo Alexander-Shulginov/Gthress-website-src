@@ -1,0 +1,24 @@
+//* h1 hero section
+%hero-title-style {
+	font-family: $main-font;
+	font-size: clamp-px(26, 60, 320);
+	color: $base-light-color;
+	font-weight: 800;
+	line-height: 1.4;
+	text-transform: uppercase;
+}
+
+//* h2
+%title-style {
+	margin-bottom: clamp-px(30, 60);
+	font-family: $main-font;
+	font-size: clamp-px(36, 52);
+	color: $decor-color;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+%title-light-style {
+	@extend %title-style;
+	color: $base-light-color;
+}

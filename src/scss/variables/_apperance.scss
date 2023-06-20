@@ -1,0 +1,19 @@
+$main-font: "Montserrat";
+
+$base-color: #111827;
+$base-light-color: #ffffff;
+$decor-color: #003b77;
+$accent-color: #99ff99;
+$bg-color: #ffffff;
+$bg-decor-color: #f3f3f3;
+$bg-hero: linear-gradient(
+		96.95deg,
+		rgba(0, 42, 85, 0.68) 24.05%,
+		rgba(0, 42, 85, 0) 100%
+	),
+	linear-gradient(
+		79.3deg,
+		#002a55 26.57%,
+		rgba(0, 42, 85, 0.76) 51.95%,
+		rgba(12, 37, 94, 0) 88.87%
+	);

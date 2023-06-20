@@ -1,0 +1,608 @@
+- var names = ["Химия", "Машиностроение", "Металлургия", "Фармацевтика", "Строительство", "Деревообработка"];
+
+section.partners
+	.container 
+		h2.partners__title Партнеры
+		p.partners__descr 
+			| Благодаря тесному сотрудничеству с лучшими транспортными компаниями мы способны предложить качественный и эффективный логистический сервис, применяя индивидуальный подход к клиентам.
+		section.custom-tabs 
+			nav.custom-tabs__nav 
+				each name, index in names 	
+					if index === 0
+						button.custom-tabs__btn.custom-tabs__btn--active(type="button")= name
+					else
+						button.custom-tabs__btn(type="button")= name
+			.custom-tabs__wrapper 
+				//- 1
+				.custom-tabs__content.custom-tabs__content--active
+					.custom-tabs__item.custom-tabs__item--large
+						+img-simple("partners/chemical", "custom-tabs__img", 720, 350, "Chemical lab", "lazy")
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--segezha", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--sponsor-2", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item.custom-tabs__item--large
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--techo", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--red-october", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item
+						a.custom-tabs__link.custom-tabs__partners-link(href="#") Стать партнером
+				//- 2
+				.custom-tabs__content
+					.custom-tabs__item.custom-tabs__item--large
+						+img-simple("partners/auto", "custom-tabs__img", 720, 350, "Auto", "lazy")
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--sponsor-2", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--sponsor-4", "custom-tabs__icon", 200, 120)
+					.custom-tabs__item.custom-tabs__item--large
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--techo", "custom-tabs__icon", 200, 120)
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--red-october", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item
+						a.custom-tabs__link.custom-tabs__partners-link(href="#") Стать партнером
+				//- 3
+				.custom-tabs__content
+					.custom-tabs__item.custom-tabs__item--large
+						+img-simple("partners/metal", "custom-tabs__img", 720, 350, "Factori", "lazy")
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--red-october", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--sponsor-4", "custom-tabs__icon", 200, 120)
+					.custom-tabs__item.custom-tabs__item--large
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--techo", "custom-tabs__icon", 200, 120)
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--sponsor-2", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item
+						a.custom-tabs__link.custom-tabs__partners-link(href="#") Стать партнером
+				//- 4
+				.custom-tabs__content
+					.custom-tabs__item.custom-tabs__item--large
+						+img-simple("partners/farma", "custom-tabs__img", 720, 350, "Farm", "lazy")
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--red-october", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--sponsor-1", "custom-tabs__icon", 200, 120)
+					.custom-tabs__item.custom-tabs__item--large
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--techo", "custom-tabs__icon", 200, 120)
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--sponsor-3", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item
+						a.custom-tabs__link.custom-tabs__partners-link(href="#") Стать партнером
+				//- 5
+				.custom-tabs__content
+					.custom-tabs__item.custom-tabs__item--large
+						+img-simple("partners/building", "custom-tabs__img", 720, 350, "Build", "lazy")
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--techo", "custom-tabs__icon", 200, 120)
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--sponsor-1", "custom-tabs__icon", 200, 120)
+					.custom-tabs__item.custom-tabs__item--large
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--red-october", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--sponsor-3", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item
+						a.custom-tabs__link.custom-tabs__partners-link(href="#") Стать партнером
+				//- 6
+				.custom-tabs__content
+					.custom-tabs__item.custom-tabs__item--large
+						+img-simple("partners/wood", "custom-tabs__img", 720, 350, "wood", "lazy")
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--techo", "custom-tabs__icon", 200, 120)
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--segezha", "custom-tabs__icon", 200, 120)
+					.custom-tabs__item.custom-tabs__item--large
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--red-october", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item
+						a.custom-tabs__link(href="#")
+							+svg("sponsors--sponsor-2", "custom-tabs__icon", 200, 70)
+					.custom-tabs__item
+						a.custom-tabs__link.custom-tabs__partners-link(href="#") Стать партнером
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			//- <div class="custom-tabs__item custom-tabs__item--large">
+//- 						<picture>
+//- 							<source
+//- 								type="image/webp"
+//- 								srcset="
+//- 									./img/partners/chemical.webp,
+//- 									./img/partners/chemical@2x.webp 2x,
+//- 									./img/partners/chemical@3x.webp 3x
+//- 								"
+//- 								media="(min-width: 1024px)"
+//- 							/>
+//- 							<img
+//- 								class="custom-tabs__img"
+//- 								src="./img/partners/chemical.webp"
+//- 								loading="lazy"
+//- 								width="720"
+//- 								height="350"
+//- 								loading="lazy"
+//- 								alt="Chemical"
+//- 							/>
+//- 						</picture>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/segezha.svg"
+//- 								width="200"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/avia.svg"
+//- 								width="120"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item custom-tabs__item--large">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/techo.svg"
+//- 								width="200"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/red-october.svg"
+//- 								width="200"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link custom-tabs__partners-link">
+//- 							Стать партнером
+//- 						</a>
+//- 					</div>
+//- 				</div>
+//- 				<!-- 2 -->
+//- 				<div class="custom-tabs__content custom-tabs__content">
+//- 					<div class="custom-tabs__item custom-tabs__item--large">
+//- 						<picture>
+//- 							<source
+//- 								type="image/webp"
+//- 								srcset="
+//- 									./img/partners/auto.webp,
+//- 									./img/partners/auto@2x.webp 2x,
+//- 									./img/partners/auto@3x.webp 3x
+//- 								"
+//- 								media="(min-width: 1024px)"
+//- 							/>
+//- 							<img
+//- 								class="custom-tabs__img"
+//- 								src="./img/partners/auto.webp"
+//- 								loading="lazy"
+//- 								width="720"
+//- 								height="350"
+//- 								loading="lazy"
+//- 								alt="Auto"
+//- 							/>
+//- 						</picture>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/stripe.svg"
+//- 								width="120"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/red-october.svg"
+//- 								width="200"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item custom-tabs__item--large">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/techo.svg"
+//- 								width="200"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/iveco.svg"
+//- 								width="100"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link custom-tabs__partners-link">
+//- 							Стать партнером
+//- 						</a>
+//- 					</div>
+//- 				</div>
+//- 				<!-- 3 -->
+//- 				<div class="custom-tabs__content custom-tabs__content">
+//- 					<div class="custom-tabs__item custom-tabs__item--large">
+//- 						<picture>
+//- 							<source
+//- 								type="image/webp"
+//- 								srcset="
+//- 									./img/partners/metal.webp,
+//- 									./img/partners/metal@2x.webp 2x,
+//- 									./img/partners/metal@3x.webp 3x
+//- 								"
+//- 								media="(min-width: 1024px)"
+//- 							/>
+//- 							<img
+//- 								class="custom-tabs__img"
+//- 								src="./img/partners/metal.webp"
+//- 								loading="lazy"
+//- 								width="720"
+//- 								height="350"
+//- 								loading="lazy"
+//- 								alt="Metal"
+//- 							/>
+//- 						</picture>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/red-october.svg"
+//- 								width="200"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/five.svg"
+//- 								width="120"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item custom-tabs__item--large">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/glo.svg"
+//- 								width="100"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/techo.svg"
+//- 								width="150"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link custom-tabs__partners-link">
+//- 							Стать партнером
+//- 						</a>
+//- 					</div>
+//- 				</div>
+//- 				<!-- 4 -->
+//- 				<div class="custom-tabs__content custom-tabs__content">
+//- 					<div class="custom-tabs__item custom-tabs__item--large">
+//- 						<picture>
+//- 							<source
+//- 								type="image/webp"
+//- 								srcset="
+//- 									./img/partners/farma.webp,
+//- 									./img/partners/farma@2x.webp 2x,
+//- 									./img/partners/farma@3x.webp 3x
+//- 								"
+//- 								media="(min-width: 1024px)"
+//- 							/>
+//- 							<img
+//- 								class="custom-tabs__img"
+//- 								src="./img/partners/farma.webp"
+//- 								loading="lazy"
+//- 								width="720"
+//- 								height="350"
+//- 								loading="lazy"
+//- 								alt="Metal"
+//- 							/>
+//- 						</picture>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/iveco.svg"
+//- 								width="200"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/avia.svg"
+//- 								width="120"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item custom-tabs__item--large">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/segezha.svg"
+//- 								width="100"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/five.svg"
+//- 								width="150"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link custom-tabs__partners-link">
+//- 							Стать партнером
+//- 						</a>
+//- 					</div>
+//- 				</div>
+//- 				<!-- 5 -->
+//- 				<div class="custom-tabs__content custom-tabs__content">
+//- 					<div class="custom-tabs__item custom-tabs__item--large">
+//- 						<picture>
+//- 							<source
+//- 								type="image/webp"
+//- 								srcset="
+//- 									./img/partners/building.webp,
+//- 									./img/partners/building@2x.webp 2x,
+//- 									./img/partners/building@3x.webp 3x
+//- 								"
+//- 								media="(min-width: 1024px)"
+//- 							/>
+//- 							<img
+//- 								class="custom-tabs__img"
+//- 								src="./img/partners/building.webp"
+//- 								loading="lazy"
+//- 								width="720"
+//- 								height="350"
+//- 								loading="lazy"
+//- 								alt="Building"
+//- 							/>
+//- 						</picture>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/stripe.svg"
+//- 								width="200"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/iveco.svg"
+//- 								width="120"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item custom-tabs__item--large">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/glo.svg"
+//- 								width="100"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/five.svg"
+//- 								width="150"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link custom-tabs__partners-link">
+//- 							Стать партнером
+//- 						</a>
+//- 					</div>
+//- 				</div>
+//- 				<!-- 6 -->
+//- 				<div class="custom-tabs__content custom-tabs__content">
+//- 					<div class="custom-tabs__item custom-tabs__item--large">
+//- 						<picture>
+//- 							<source
+//- 								type="image/webp"
+//- 								srcset="
+//- 									./img/partners/wood.webp,
+//- 									./img/partners/wood@2x.webp 2x,
+//- 									./img/partners/wood@3x.webp 3x
+//- 								"
+//- 								media="(min-width: 1024px)"
+//- 							/>
+//- 							<img
+//- 								class="custom-tabs__img"
+//- 								src="./img/partners/wood.webp"
+//- 								loading="lazy"
+//- 								width="720"
+//- 								height="350"
+//- 								loading="lazy"
+//- 								alt="Wood"
+//- 							/>
+//- 						</picture>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/segezha.svg"
+//- 								width="200"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/five.svg"
+//- 								width="120"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item custom-tabs__item--large">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/avia.svg"
+//- 								width="100"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link">
+//- 							<img
+//- 								class="custom-tabs__icon"
+//- 								src="./icons/sponsors/iveco.svg"
+//- 								width="150"
+//- 								height="70"
+//- 								loading="lazy"
+//- 								alt="Partners icon"
+//- 							/>
+//- 						</a>
+//- 					</div>
+//- 					<div class="custom-tabs__item">
+//- 						<a href="#" class="custom-tabs__link custom-tabs__partners-link">
+//- 							Стать партнером
+//- 						</a>
+//- 					</div>
+//- 				</div>
+//- 			</div>
+//- 		</section>
+//- 	</div>
+//- </section>

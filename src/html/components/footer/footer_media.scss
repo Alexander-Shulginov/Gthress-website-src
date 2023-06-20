@@ -1,0 +1,45 @@
+@media (max-width: 945px) {
+	.footer {
+		&__inner {
+			flex-direction: column;
+		}
+
+		&__descr {
+			margin-bottom: #{$offset-small}px;
+		}
+	}
+}
+
+@media (max-width: 670px) {
+	.footer {
+		&__inner {
+			margin-bottom: #{$offset-extra-small}px;
+		}
+
+		&__info {
+			flex-direction: column;
+			gap: #{$gap-base}px;
+		}
+
+		&__item {
+			&:nth-child(2),
+			&:nth-child(3) {
+				text-align: left;
+			}
+		}
+	}
+}
+
+@media (max-width: 530px) {
+	.footer {
+		.form {
+			&__input {
+				flex-basis: 100%;
+			}
+
+			&__select-wrap {
+				flex-basis: 100%;
+			}
+		}
+	}
+}

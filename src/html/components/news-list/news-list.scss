@@ -1,0 +1,74 @@
+.news-list {
+	$gray-color: #6b7280;
+	$border-color: #d1d5db;
+	@extend %section-padding;
+
+	&__item {
+		display: flex;
+		gap: 20px;
+		padding: clamp-px(30, 50) 0;
+		border-top: 1px solid $border-color;
+		transition: background-color 0.2s ease-in-out;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $bg-decor-color;
+			}
+		}
+	}
+
+	&__photo {
+		flex-shrink: 0;
+	}
+
+	&__date {
+		margin-right: clamp-px(1, 70, 933);
+		color: $gray-color;
+	}
+
+	&__date--accent {
+		width: 115px;
+		display: block;
+		line-height: 1;
+		font-size: clamp-px(16, 84, 511);
+		color: $decor-color;
+	}
+
+	&__content {
+		max-width: 800px;
+		position: relative;
+		@media (any-hover: hover) {
+			&:hover {
+				.news-list__icon {
+					transition: transform 0.3s ease-in-out;
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: $offset-large;
+		color: $base-color;
+		font-size: clamp-px(18, 24);
+		font-weight: 600;
+		margin-bottom: offset($offset-base);
+	}
+
+	&__text {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 4; //* Количество строк
+		-webkit-box-orient: vertical;
+	}
+
+	&__icon {
+		position: absolute;
+		bottom: 0;
+		right: 4px;
+		width: 19px;
+		height: 19px;
+		transition: transform 0.3s ease-in-out;
+		stroke: $decor-color;
+	}
+}

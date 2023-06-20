@@ -1,0 +1,64 @@
+.faq {
+	@extend %section-padding;
+	margin-bottom: offset($offset-large);
+
+	&__title {
+		@extend %title-style;
+	}
+}
+.accordion {
+	&__accordion {
+		display: flex;
+		flex-direction: column;
+		gap: #{$gap-base}px;
+		transition: all 0.3 ease-in-out;
+		overflow: hidden;
+	}
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		padding: clamp-px(15, 32) clamp-px(10, 45);
+		background-color: $decor-color;
+		border-radius: $radius-base;
+	}
+
+	&__title {
+		padding-right: #{$offset-extra-small}px;
+		@extend %hero-text-style;
+		font-weight: 500;
+	}
+
+	&__btn {
+		background-color: transparent;
+		cursor: pointer;
+		transition: all 0.2s ease;
+	}
+
+	&__icon {
+		transition: all 0.2s ease-in;
+		transform: rotate(45deg);
+	}
+
+	&__icon--active {
+		transform: rotate(135deg);
+	}
+
+	&__body {
+		background-color: $bg-color;
+		transition: height 0.3s ease;
+		height: 0;
+		overflow: hidden;
+	}
+
+	&__content {
+		padding: 1rem;
+		position: relative;
+	}
+
+	&__text {
+		font-size: 16px;
+		color: $base-color;
+		padding-bottom: 8px;
+	}
+}

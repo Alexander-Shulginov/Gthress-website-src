@@ -1,0 +1,23 @@
+@media (max-width: 690px) {
+	.benefits {
+		&__wrapper {
+			flex-direction: column;
+		}
+
+		&__item {
+			width: 100%;
+
+			&:nth-child(even) {
+				transform: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.benefits {
+		&__img {
+			max-width: 60%;
+		}
+	}
+}

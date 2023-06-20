@@ -1,0 +1,39 @@
+@media (max-width: 795px) {
+	.custom-tabs {
+		&__nav {
+			width: 100%;
+			overflow-x: auto;
+		}
+
+		&__content {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		&__item:last-child {
+			grid-column: 2 span;
+		}
+	}
+}
+
+@media (max-width: 602px) {
+	.custom-tabs {
+		&__content {
+			grid-template-columns: 1fr;
+		}
+
+		&__item:first-child {
+			display: none;
+		}
+
+		&__item--large,
+		&__item {
+			grid-column: 1 span;
+		}
+
+		&__item:last-child {
+			grid-column: 1 span;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

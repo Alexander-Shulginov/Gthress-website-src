@@ -1,0 +1,103 @@
+.partners {
+	@extend %section-padding;
+
+	&__title {
+		@extend %title-style;
+	}
+
+	&__descr {
+		max-width: 1086px;
+		margin-left: auto;
+		margin-bottom: #{$offset-base}px;
+		@extend %base-text-style;
+	}
+}
+.custom-tabs {
+	&__nav {
+		padding-bottom: 10px;
+		display: flex;
+		gap: #{$gap-medium}px;
+		margin-bottom: #{$offset-small}px;
+	}
+
+	&__btn {
+		color: #6b7280;
+		cursor: pointer;
+		background-color: transparent;
+		transition: background-color 0.2s ease;
+
+		&--active {
+			color: $decor-color;
+			background-color: transparent;
+			border-bottom: 3px solid currentColor;
+			transition: color 0.2s ease;
+			z-index: 22;
+
+			&:hover {
+				color: lighten($decor-color, 10%);
+			}
+		}
+	}
+
+	&__wrapper {
+		max-width: 100%;
+		position: relative;
+	}
+
+	&__content {
+		display: none;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: #{$gap-base}px;
+		visibility: hidden;
+		color: $base-color;
+		transition: opacity 0.4s ease;
+
+		&--active {
+			display: grid;
+			visibility: visible;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $bg-decor-color;
+		border-radius: $radius-base;
+
+		&--large {
+			grid-column: span 2;
+		}
+
+		&:first-child {
+			background-color: unset;
+		}
+
+		&:last-child {
+			background-color: $accent-color;
+			align-items: flex-end;
+			justify-content: flex-end;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__link {
+		padding: #{$offset-extra-small}px;
+	}
+
+	&__partners-link {
+		@extend %link-style;
+		color: $decor-color;
+		position: relative;
+		&::after {
+			content: "";
+			stroke: inherit;
+		}
+	}
+}
